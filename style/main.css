@@ -5,8 +5,10 @@
     font-family: 'Segoe UI',  sans-serif;
 }
 body {
-    background: #0d0d0d;
-    color: #e4e4e4;
+    background : #0d0d0d;
+    background-image: url('data:image/svg+xml;utf8,<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg"><rect width="3" height="3" fill="%23181818"/></svg>');
+
+  color: #e4e4e4;
     line-height: 1.6;
     padding-top: 0px;
 }
@@ -66,7 +68,7 @@ header {
 }
 
 .highlight {
-    color: #6D5DFC;
+    color: #5daffc;
 }
 
 .hero p {
@@ -75,19 +77,31 @@ header {
 }
 
 .btn {
-    margin-top: 20px;
-    padding: 12px 25px;
-    background-color: #6D5DFC;
-    color: #fff;
-    cursor: pointer;
-    border: none;
+    display: inline-block;
+    padding: 15px 25px;
+    background: linear-gradient(180deg, #5daffc, #675fac);
+    background-size: 100% 200%;
+    background-position: 0 0; 
+    color: white;
+    text-decoration: none;
     border-radius: 8px;
-    font-size: 18px;
-    transition: background-color 0.3s;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-position 0.3s ease, transform 0.3s ease;
+    outline: none;
 }
 
 .btn:hover {
-    background-color: #5848d6;
+    background-position: 0 100%; 
+    transform: translateY(-5px);
+}
+
+.btn:active {
+    transform: translateY(2px);
+}
+
+.btn:visited {
+    color: #fff;
 }
 
 section {
@@ -121,13 +135,19 @@ h2 {
 .projects .project-card > button,
 .projects .project-card .btn,
 .projects .project-card button {
-    margin-top: 10px;
-    background: linear-gradient(180deg, #00b0ff 0%, #0088d6 100%);
-    border: none;
+    display: inline-block;
     padding: 10px 20px;
-    border-radius: 8px;
+    background: linear-gradient(180deg, #5daffc, #675fac);
+    background-size: 100% 200%;
+    background-position: 0 0; 
     color: white;
+    text-decoration: none;
+    border-radius: 8px;
     font-weight: bold;
+    margin-top: 10px;
+    transition: background-position 0.3s ease, transform 0.3s ease;
+    outline: none;
+    border: none;
     cursor: pointer;
     transition: transform 220ms ease, box shadow 220ms ease, opacity 220ms ease;
     box-shadow: 0 4px 10px rgba(0,0,0,0.25);
@@ -141,6 +161,10 @@ h2 {
 .projects .project-card .btn:focus,
 .projects .project-card button:focus {
     transform: translateY(-2px);
+
+    background-position: 0 100%; 
+    transform: translateY(-5px);
+
     box-shadow: 
     0 6px 1px rgba(0,0,0,0.35),
     0 0 28px rgba(0,153,255,0.30);
@@ -216,4 +240,35 @@ h2 {
     position: fixed;
     top: 0;
     right: 0;
+}
+
+.contact-list {
+    display: grid;
+    grid-template-columns: (auto fit, minmax(25px, 1fr));
+    gap: 2px;
+    padding-top: 20px;
+}
+
+.contact-card-email,
+.contact-card-github,
+.contact-card-linkedin {
+    background: #111;
+    padding: 20px;
+    border: 1px solid #222;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.contact-card-email:hover,
+.contact-card-github:hover,
+.contact-card-linkedin:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0px 25px rgba(0,153,255,0.4);
+    border-color: #0099ff;
+    color: #fff;
+}
+
+.contact-list a {
+    color: #5daffc;
 }
