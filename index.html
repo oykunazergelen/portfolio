@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+       <link rel="icon" href="img/favicon.svg" type="img/svg+xml">
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
     <header>
         <nav class="nav">
-            <h1 class="logo">Welcome</h1>
+            <h1 class="logo">Portfolio</h1>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
@@ -24,8 +24,9 @@
         </nav>
     </header>
 
-    <section id="home" class="hero">    
-        <h2>Hello, I am <span class="highlight">Öykü</span></h2>
+    <section id="home" class="hero">
+        <img src="img/header.jpg" alt="welcomepage" class="hero-image">  
+        <h2>Hello I am <span class="highlight">Öykü</span></h2>
         <p>Welcome to my portfolio! I am a software engineering and web design student focused on translating innovative concepts into performant, user-centric web applications. Explore my work to see how I integrate clean code with compelling design.</p>
         <a href="#projects" class="btn" style="margin-top: 15px; display: inline-block">View My Work</a>
             
@@ -33,40 +34,38 @@
 
     <section id="about" class="about fade-in">
         <h2>About Me</h2>
+        <img src="img/aboutme.jpg" class ="about-image-bg" alt="About Me Image">
+        <img src="img/me.jpg" alt="Picture of Öykü Naz Ergelen" class="about-image" width:"200" height="200">
         <p>I am a proactive developer specializing in bridging the gap between high-quality design and robust engineering. I am currently in my second year, pursuing dual degrees in Software Engineering at the European University of Lefke in Cyprus and in Web Designing and Coding at Atatürk University in Turkey. This unique academic foundation allows me to deliver full-stack solutions that are not only performant and technically sound, but also optimized for user experience (UX). Over the course of my time in University, I have taken Data Structures, Basics of Web Design, and Literacy of Web. I am currently focused on mastering modern frameworks and contributing clean, well-documented code to challenging projects using C, HTML, CSS, JavaScript and Node.js. Let's connect—my contact information and code samples are available below!</p>
     </section>
 
     <section id="projects" class="projects fade-in">
+        <img src="img/projects.jpg" class ="projects-bg" alt="Projects Image">
         <h2>Improved from Labs</h2>
         <div class="project-list">
             <div class="project-card">
                 <h3>Simple Date Manipulator in C</h3>
                 <p>A simple program that can compare dates, advance or reverse any number of days from the date. </p>
-                <a href="https://github.com/oykunazergelen/Simple_Date_Manipulator_in_C.git" class="btn" style="margin-top: 15px; display: inline-block;">View Project on Github</a>
+                <a href="https://github.com/oykunazergelen/Simple_Date_Manipulator_in_C.git" target="_blank" class="btn" style="margin-top: 15px; display: inline-block;">View Project on Github</a>
             
             </div>
         </div>
-        <h2>Concepts</h2>
-        <div class="project-list">
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>A brief description of Project 1.</p>
-                <a href="#" class="btn" style="margin-top: 15px; display: inline-block;">View Project</a>
-            
-            </div>
         </div>
         <h2>Practice and Personal Projects</h2>
         <div class="project-list">
             <div class="project-card">
-                <h3>Project 1</h3>
-                <p>A brief description of Project 1.</p>
-                <a href="#" class="btn" style="margin-top: 15px; display: inline-block;">View Project</a>
+                <h3>Task Manager Demo</h3>
+                <p>A simple and easy-to-use Task Manager application.
+Users can add tasks, mark them as completed, and delete them.
+Built entirely with HTML, CSS, and Vanilla JavaScript, without any backend. Version 1.0.0 </p>
+                <a href="https://oykunazergelen.github.io/task-manager/" target="_blank" class="btn" style="margin-top: 15px; display: inline-block;">View Project on Site</a>
             
             </div>
         </div>
     </section>
     <section id="contact" class="contact fade-in">
         <h2>Contact Me</h2>
+        <img src="img/contacts.jpg" class ="contact-bg" alt="Contact Image">
         <p> If you would like to get in touch, you can reach me by:
             <div class="contact-list">
                 <div class="contact-card-email">
