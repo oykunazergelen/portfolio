@@ -254,7 +254,7 @@ h2 {
 
 .hamburger {
     display: none;
-    font-size:70px;
+    font-size: 28px;
     background: none;
     color: white;
     border: none;
@@ -263,15 +263,16 @@ h2 {
     position: relative;
 }
 
-@media (max-width: auto) {
+@media (max-width: 768px) {
     .nav-links {
         display: none;
         flex-direction: column;
         background: #111;
         position: absolute;
-        top: 70px;
-        right: 0;
-        width: 180px;
+        top: 100%; /* place menu directly below the header regardless of header height */
+        right: 16px;
+        width: auto;
+        max-width: calc(100% - 32px);
         border: 1px solid #222;
         border-radius: 8px;
         padding: 20px;
@@ -286,6 +287,17 @@ h2 {
 
     .hamburger {
         display: block;
+    }
+
+    /* reduce header padding on small screens so nav fits */
+    header {
+        padding: 12px 20px;
+    }
+
+    /* slightly larger touch target for hamburger on mobile */
+    .hamburger {
+        font-size: 26px;
+        padding: 6px 8px;
     }
 }
 
