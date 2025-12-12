@@ -75,6 +75,8 @@ header {
 .hero p {
     font-size: 20px;
     max-width: 600px;
+    width: 100%;
+    padding: 0 px 16px;
 }
 
 .hero-image {
@@ -114,17 +116,15 @@ opacity: 0.3;
     color: #fff;
 }
 
-/* Section spacing - base and per-section overrides */
+
 section {
     padding: 80px 80px;
 }
 
-/* Default gap between consecutive sections */
 section + section {
     margin-top: 80px;
 }
 
-/* Per-section custom spacing (override as needed) */
 #home {
     padding-bottom: 60px;
 }
@@ -263,15 +263,24 @@ h2 {
     position: relative;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px ) {
+    .hero {
+        text-align: center;
+    }
+    .projecs {
+        grid-template-columns: 1fr;
+    }
+    section {
+        padding: 60px 20px;
+    }
     .nav-links {
         display: none;
         flex-direction: column;
         background: #111;
         position: absolute;
-        top: 100%; /* place menu directly below the header regardless of header height */
+        top: 100%; 
         right: 16px;
-        width: auto;
+        width: 100%;
         max-width: calc(100% - 32px);
         border: 1px solid #222;
         border-radius: 8px;
@@ -289,12 +298,10 @@ h2 {
         display: block;
     }
 
-    /* reduce header padding on small screens so nav fits */
     header {
         padding: 12px 20px;
     }
 
-    /* slightly larger touch target for hamburger on mobile */
     .hamburger {
         font-size: 26px;
         padding: 6px 8px;
