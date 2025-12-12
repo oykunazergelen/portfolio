@@ -1,8 +1,9 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI',  sans-serif;
+
 }
 body {
     background : #0d0d0d;
@@ -76,6 +77,15 @@ header {
     max-width: 600px;
 }
 
+.hero-image {
+position: absolute;
+width: 100%;
+height: 90vh;
+object-fit: cover;
+z-index: -1;
+opacity: 0.3;
+}
+
 .btn {
     display: inline-block;
     padding: 15px 25px;
@@ -104,15 +114,72 @@ header {
     color: #fff;
 }
 
+/* Section spacing - base and per-section overrides */
 section {
-    padding: 80px 40px;
+    padding: 80px 80px;
+}
+
+/* Default gap between consecutive sections */
+section + section {
+    margin-top: 80px;
+}
+
+/* Per-section custom spacing (override as needed) */
+#home {
+    padding-bottom: 60px;
+}
+
+#about {
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    font-size: 15px;
+}
+
+#projects {
+    margin-top: 60px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+#contact {
+    margin-top: 10px;
+    padding-top: 20px;
 }
 
 h2 {
     font-size: 36px;
     margin-bottom: 20px;
 }
+.about-image-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.1;
+}
+.about-image {
+    float: left;
+    margin-right: 20px;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
 
+.projects-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.1;
+}
 .projecs .projects-list {
     display: grid;
     grid-template-columns: (auto fit, minmax(250px, 1fr));
@@ -196,7 +263,7 @@ h2 {
     position: relative;
 }
 
-@media (max-width: 768px) {
+@media (max-width: auto) {
     .nav-links {
         display: none;
         flex-direction: column;
@@ -240,6 +307,17 @@ h2 {
     position: fixed;
     top: 0;
     right: 0;
+}
+
+.contact-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.1;
 }
 
 .contact-list {
