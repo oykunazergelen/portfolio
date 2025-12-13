@@ -180,7 +180,7 @@ h2 {
     z-index: -1;
     opacity: 0.1;
 }
-.projecs .projects-list {
+.projects .projects-list {
     display: grid;
     grid-template-columns: (auto fit, minmax(250px, 1fr));
     gap: 20px;
@@ -267,7 +267,7 @@ h2 {
     .hero {
         text-align: center;
     }
-    .projecs {
+    .projects {
         grid-template-columns: 1fr;
     }
     section {
@@ -306,12 +306,11 @@ h2 {
         font-size: 26px;
         padding: 6px 8px;
     }
-    .contact-card-email,
-    .contact-card-github,
-    .contact-card-linkedin {
-        padding: 15px;
-        
-    } 
+    .project-card {
+       max-width: 350%;
+       width: 100%;
+       margin 0 auto;
+    }
 }
 
 .fade-in {
@@ -375,3 +374,4 @@ h2 {
 .contact-list a {
     color: #5daffc;
 }
+
