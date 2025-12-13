@@ -165,17 +165,11 @@ h2 {
 
 .about-image {
     float: left;
-    margin-right: 70px;
+    margin-right: 100px;
     border-radius: 10px;
     width: 250px;
     height: 250px;
-    object-fit: cover;
-        background: #fffafa;
-    padding: 20px;
-    border: 1px solid #101010;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    
+    object-fit: cover; 
 }
 
 .projects-bg {
@@ -367,7 +361,7 @@ h2 {
     border: 1px solid #222;
     border-radius: 10px;
     transition: all 0.3s ease;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .contact-card-email:hover,
