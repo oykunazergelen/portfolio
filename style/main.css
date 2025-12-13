@@ -306,6 +306,12 @@ h2 {
         font-size: 26px;
         padding: 6px 8px;
     }
+    .contact-card-email,
+    .contact-card-github,
+    .contact-card-linkedin {
+        padding: 15px;
+        
+    } 
 }
 
 .fade-in {
