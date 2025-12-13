@@ -163,7 +163,7 @@ h2 {
 }
 .about-image {
     float: left;
-    margin-right: 20px;
+    margin-right: 50px;
     border-radius: 10px;
     width: 250px;
     height: 250px;
@@ -309,7 +309,7 @@ h2 {
     .project-card {
        max-width: 350%;
        width: 100%;
-       margin 0 auto;
+       margin: 0 auto;
     }
 }
 
@@ -346,7 +346,7 @@ h2 {
 
 .contact-list {
     display: grid;
-    grid-template-columns: (auto fit, minmax(25px, 1fr));
+    grid-template-columns: (auto fit, minmax(250px, 1fr));
     gap: 2px;
     padding-top: 20px;
 }
@@ -359,7 +359,7 @@ h2 {
     border: 1px solid #222;
     border-radius: 10px;
     transition: all 0.3s ease;
-    text-decoration: none;
+    font-size: 13px;
 }
 
 .contact-card-email:hover,
@@ -374,4 +374,3 @@ h2 {
 .contact-list a {
     color: #5daffc;
 }
-
