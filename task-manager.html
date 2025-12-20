@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style/task-manager.CSS">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <h1 class="logo">Welcome</h1>
+            <ul class="nav-links">
+                <li><a href="/index.html#home">Home</a></li>
+                <li><a href="/index.html#about">About Me</a></li>
+                <li><a href="/index.html#projects">Projects</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+            <button type="button" class="theme-toggle"><i class="fa-solid fa-moon fa-flip-vertical fa-2xl" style="color: #ffffff;"></i></i></button>
+            <button class="hamburger">
+                ☰
+            </button>
+        </nav>
+    </header>
+    <section id="task-manager" class="about-project">
+      <div class="container">
+            <div class="task-manager-card">
+                <a href="/index.html#projects" target="_self" class="btn" style="margin-top: 15px; display: inline-block;">Go back</a>
+                <h1>Task Manager Demo</h1>
+                <p>Version v2.0</p>
+                <p>Task Manager v2.0 is a frontend web application developed as a personal learning project to improve my practical skills in web
+                development. The project was built using HTML, CSS, and vanilla JavaScript, with a focus on understanding core concepts such as DOM 
+                manipulation, basic state management, and user interaction—without using a backend or external libraries. Users can create and delete 
+                tasks, organize them by priority, and track progress through defined task statuses. The application features a responsive layout, smooth 
+                UI animations, and a dynamic pie chart dashboard that visually represents task distribution in real-time. This project reflects my
+                growing interest in frontend development and serves as a foundation for future full-stack projects.
+                </p>
+                <img src="img/task-manager.png" alt="Task Manager v2.0" class="task-manager-ss">
+                    <div class="buttons">
+                        <a href="#task-manager" class="upbtn" style="margin-top: 15px; display: inline-block;">↑</a>
+                        <a href="https://oykunazergelen.github.io/task-manager/" target="_blank" class="btn" style="margin-top: 15px; display: inline-block;">View Project on Site</a>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/task-manager.js"></script>
+</body>
+</html>
