@@ -18,26 +18,6 @@
     --button-color: linear-gradient(#ba90db , #7e40ac);
 }
 
-root {
-    --bg-color: linear-gradient(#0d0d0d, #300651);
-    --text-color: #e4e4e4;
-    --card-bg: #111;
-    --card-border: #222;
-    --logo: #fff;
-    --nav-links-hover: #bbb;
-    --button-color: linear-gradient(#4e0b82, #7313bc);
-}
-
-.light-mode {
-    --bg-color: linear-gradient(#fee8e8, #b07cd7);
-    --text-color: #232323;
-    --card-bg: #ffe2e2;
-    --card-border: #beb6b6;
-    --logo: #080808;
-    --nav-links-hover: #636363;
-    --button-color: linear-gradient(#ba90db , #7e40ac);
-}
-
 * {
  margin: 0;
  padding: 0;
@@ -238,3 +218,4 @@ header {
        margin: 0 auto;
     }
 }
+
